@@ -132,6 +132,7 @@
     <ClInclude Include="app.h" />
     <ClInclude Include="converter.h" />
     <ClInclude Include="DecToHex.h" />
+    <ClInclude Include="HexToDec.h" />
     <ClInclude Include="imgui-1.92.2b\backends\imgui_impl_dx9.h" />
     <ClInclude Include="imgui-1.92.2b\backends\imgui_impl_win32.h" />
     <ClInclude Include="imgui-1.92.2b\imconfig.h" />
@@ -145,6 +146,7 @@
     <ClCompile Include="app.cpp" />
     <ClCompile Include="converter.cpp" />
     <ClCompile Include="DecToHex.cpp" />
+    <ClCompile Include="HexToDec.cpp" />
     <ClCompile Include="imgui-1.92.2b\backends\imgui_impl_dx9.cpp" />
     <ClCompile Include="imgui-1.92.2b\backends\imgui_impl_win32.cpp" />
     <ClCompile Include="imgui-1.92.2b\imgui.cpp" />

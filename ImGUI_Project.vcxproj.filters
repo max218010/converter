@@ -51,6 +51,9 @@
     <ClInclude Include="DecToHex.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="HexToDec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="imgui-1.92.2b\imgui.cpp">
@@ -84,6 +87,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DecToHex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HexToDec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

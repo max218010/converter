@@ -167,7 +167,7 @@ void app::update()
             if (gekozen == 0)   // hex → dec
             {
                 value = std::stoi(buffer, nullptr, 16);
-                converter = new DecToHex();
+                converter = new HexToDec();
             }
             else if (gekozen == 1)  // dec → hex
             {

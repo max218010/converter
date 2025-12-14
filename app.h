@@ -6,7 +6,7 @@
 #include "converter.h"
 #include <string>
 #include "DecToHex.h"
-
+#include "HexToDec.h"
 
 class app
 {
