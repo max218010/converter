@@ -143,54 +143,6 @@ void app::run()
     }
 }
 
-void app::update()
-{
-    ImGui::Begin("Main");
-
-    static char buffer[256] = "";
-    static std::string result = "";
-
-    ImGui::InputText("Input", buffer, sizeof(buffer));
-
-    const char* opties[] = { "hex to dec", "dec to hex" };
-    static int gekozen = 0;
-    ImGui::Combo("Conversion", &gekozen, opties, IM_ARRAYSIZE(opties));
-
-    if (ImGui::Button("Convert"))
-    {
-        int value = 0;
-
-        try
-        {
-            Converter* converter = nullptr;
-
-            if (gekozen == 0)   // hex → dec
-            {
-                value = std::stoi(buffer, nullptr, 16);
-                converter = new HexToDec();
-            }
-            else if (gekozen == 1)  // dec → hex
-            {
-                value = std::stoi(buffer);
-                converter = new DecToHex();
-            }
-
-            if (converter)
-            {
-                result = converter->convert(value);
-                delete converter;   // 🔥 belangrijk
-            }
-        }
-        catch (...)
-        {
-            result = "Invalid input";
-        }
-    }
-
-    ImGui::Text("Result: %s", result.c_str());
-
-    ImGui::End();
-}
 
 
 
