@@ -2,11 +2,11 @@
 #include "converter.h"
 #include "validators.h"
 #include <string>
-#include <sstream>
 
-class DecToHex : public Converter<int>
+
+class DecToBin : public Converter<int>
 {
 public:
     std::string convert(int value) override;
-    bool isValid(const std::string& input) const override;
+    virtual bool isValid(const std::string& input) const override;
 };

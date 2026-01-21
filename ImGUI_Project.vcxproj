@@ -131,8 +131,8 @@
   <ItemGroup>
     <ClInclude Include="app.h" />
     <ClInclude Include="converter.h" />
+    <ClInclude Include="DecToBin.h" />
     <ClInclude Include="DecToHex.h" />
-    <ClInclude Include="Gui.h" />
     <ClInclude Include="HexToDec.h" />
     <ClInclude Include="imgui-1.92.2b\backends\imgui_impl_dx9.h" />
     <ClInclude Include="imgui-1.92.2b\backends\imgui_impl_win32.h" />
@@ -142,10 +142,11 @@
     <ClInclude Include="imgui-1.92.2b\imstb_rectpack.h" />
     <ClInclude Include="imgui-1.92.2b\imstb_textedit.h" />
     <ClInclude Include="imgui-1.92.2b\imstb_truetype.h" />
+    <ClInclude Include="validators.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="app.cpp" />
-    <ClCompile Include="converter.cpp" />
+    <ClCompile Include="DecToBin.cpp" />
     <ClCompile Include="DecToHex.cpp" />
     <ClCompile Include="Gui.cpp" />
     <ClCompile Include="HexToDec.cpp" />

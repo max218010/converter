@@ -2,10 +2,10 @@
 #include <string>
 #include <vector>
 
+template <typename InputType>
 class Converter
 {
 public:
-    void showresult();
-    virtual std::string convert(int a) = 0;
-    void log();
+    virtual std::string convert(InputType a) = 0;
+    virtual bool isValid(const std::string& input) const = 0;
 };

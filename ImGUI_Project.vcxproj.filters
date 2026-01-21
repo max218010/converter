@@ -54,7 +54,10 @@
     <ClInclude Include="HexToDec.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Gui.h">
+    <ClInclude Include="DecToBin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="validators.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -86,9 +89,6 @@
     <ClCompile Include="imgui-1.92.2b\backends\imgui_impl_win32.cpp">
       <Filter>ImGui</Filter>
     </ClCompile>
-    <ClCompile Include="converter.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="DecToHex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -96,6 +96,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Gui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DecToBin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
