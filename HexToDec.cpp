@@ -6,7 +6,7 @@ std::string HexToDec::convert(std::string value)
     return std::to_string(dec);
 }
 
-bool HexToDec::isValid(const std::string& input) const
+bool HexToDec::isValid(const std::string& input)
 {
     return Validators::hex(input);
 }

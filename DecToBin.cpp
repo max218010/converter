@@ -13,7 +13,7 @@ std::string DecToBin::convert(int value)
     return result;
 }
 
-bool DecToBin::isValid(const std::string& input) const
+bool DecToBin::isValid(const std::string& input)
 {
     return Validators::decimal(input);
 }

@@ -8,5 +8,5 @@ class DecToHex : public Converter<int>
 {
 public:
     std::string convert(int value) override;
-    bool isValid(const std::string& input) const override;
+    bool isValid(const std::string& input) override;
 };

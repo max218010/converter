@@ -60,6 +60,9 @@
     <ClInclude Include="validators.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BinToDec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="imgui-1.92.2b\imgui.cpp">
@@ -95,10 +98,13 @@
     <ClCompile Include="HexToDec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Gui.cpp">
+    <ClCompile Include="ui.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DecToBin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinToDec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

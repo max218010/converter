@@ -1,11 +1,12 @@
-#pragma once
+#pragma 
 #include "converter.h"
 #include "validators.h"
 #include <string>
+#include <stdexcept>
 
-class HexToDec : public Converter<std::string>
+class BinToDec : public Converter<std::string>
 {
 public:
-    std::string convert(std::string value) override;
+    std::string convert(std::string bin) override;
     bool isValid(const std::string& input) override;
 };
