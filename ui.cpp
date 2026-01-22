@@ -77,8 +77,8 @@ void app::update()
                 }
                 //logging
                 std::thread logThread(logging, conversionEntry);
-                logThread.detach(); 
-            }
+                logThread.detach();    
+         }
             catch (...) {
                 result = "calculation error";
             }

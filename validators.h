@@ -12,7 +12,7 @@ namespace Validators
 
     inline bool hex(const std::string& s)
     {
-        static const std::regex hex("^(0[xX])?[0-9A-Fa-f]+$");
+        static const std::regex hex("^[0-9A-Fa-f]+$");
         return std::regex_match(s, hex);
     }
 

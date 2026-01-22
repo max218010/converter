@@ -7,11 +7,9 @@ std::string BinToDec::convert(std::string bin)
         int value = 0;
         for (char c : bin)
         {
-            if (c != '0' && c != '1')
-                throw std::invalid_argument("Invalid binary input");
-
             value = (value << 1) + (c - '0'); // bit shift en optellen
         }
+        if (value < 0){throw std::exception("Invalid binary input");}
         return std::to_string(value);
     }
 }
